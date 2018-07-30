@@ -1,12 +1,12 @@
 const http = require('http');
 const url = require('url');
 
-const test = require('./resolver');
+const resolver = require('./resolver');
 
 const hostname = '0.0.0.0';
-const port = 8080;
+const port = 3003;
 
-const answer = (msisdn, service_id) => test.getSubscriptionInfo(msisdn, service_id);
+const answer = (msisdn, service_id) => resolver.getSubscriptionInfo(msisdn, service_id);
 
 const server = http.createServer((req, res) => {
 	const query = url.parse(req.url, true).query;
