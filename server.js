@@ -3,8 +3,8 @@ const url = require('url');
 
 const test = require('./resolver');
 
-const hostname = '127.0.0.1';
-const port = 3005;
+const hostname = '0.0.0.0';
+const port = 8080;
 
 const answer = (msisdn, service_id) => test.getSubscriptionInfo(msisdn, service_id);
 

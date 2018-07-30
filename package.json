@@ -2,11 +2,12 @@
   "name": "msisdn_resolver",
   "version": "1.0.0",
   "description": "Get subscription info by msisdn",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "satorsight",
+  "author": "satorsight@gmail.com",
   "license": "ISC",
   "dependencies": {
     "query-string": "^6.1.0",
